@@ -1,38 +1,46 @@
 .App {
+  min-height: 100vh;
+  font-size: calc(10px + 2vmin);
+}
+
+.App .navbar {
+  padding: 15px;
+  background-color: #282c34;
+  color: white;
   text-align: center;
 }
 
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
+.App .add-form {
+  background-color: skyblue;
+  padding: 35px;
+  text-align: center;
+}
+.App .add-form label,
+input {
+  margin: 5px;
 }
 
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
+.App .add-form button {
+  width: 80px;
+  height: 25px;
+  margin: 5px;
+  border-radius: 5px;
+  text-align: center;
+  border: none;
 }
 
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
+.App .jet-list {
+  width: 40vw;
+  margin: 0 auto;
+  text-align: center;
 }
 
-.App-link {
-  color: #61dafb;
+.App .jet-list .jet  {
+  background-color: lightskyblue;
+  border-radius: 10px;
 }
 
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
+.App .jet-list .jet  * {
+  margin: 10px;
+
 }
